@@ -218,7 +218,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-primaryRed">
+      <section className="py-20 bg-gradient-to-tr from-[#16a34a9e]  to-[#d58b84b1]">
         <SlideIn direction="bottom" duration={800} delay={200}>
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
