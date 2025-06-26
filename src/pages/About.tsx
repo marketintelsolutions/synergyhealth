@@ -136,18 +136,11 @@ const AboutPage: React.FC = () => {
 
             <SlideIn direction="right" duration={700} delay={400}>
               <div className="bg-gradient-to-br from-green-100 to-blue-100 p-8 rounded-2xl">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="w-10 h-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primaryGreen mb-4">
-                    Our Mission
-                  </h3>
-                  <p className="text-lg text-gray-700 italic">
-                    "Delivering excellent support to strengthen sustainable
-                    healthcare value propositions across Africa."
-                  </p>
-                </div>
+                <img
+                  src="/images/banner.jpg"
+                  alt="woman sitting"
+                  className="rounded-2xl"
+                />
               </div>
             </SlideIn>
           </div>
