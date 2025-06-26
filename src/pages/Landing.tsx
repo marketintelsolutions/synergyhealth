@@ -47,11 +47,11 @@ const HomePage: React.FC = () => {
             </SlideIn>
 
             <SlideIn direction="bottom" duration={600} delay={400}>
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-red-50 to-red-100">
+                <div className="w-16 h-16 bg-red-600  rounded-full flex items-center justify-center mx-auto mb-4">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-primaryGreen mb-3">
+                <h3 className="text-xl font-bold text-primaryRed mb-3">
                   End-to-End Solutions
                 </h3>
                 <p className="text-gray-600">
@@ -62,8 +62,8 @@ const HomePage: React.FC = () => {
             </SlideIn>
 
             <SlideIn direction="right" duration={600} delay={600}>
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-red-50 to-red-100">
-                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-green-100">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primaryGreen mb-3">
