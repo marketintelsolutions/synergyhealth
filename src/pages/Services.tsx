@@ -12,6 +12,7 @@ import {
   Shield,
 } from "lucide-react";
 import SlideIn from "../components/Layout/SlideIn";
+import { Link } from "react-router-dom";
 
 const ServicesPage: React.FC = () => {
   const services = [
@@ -69,7 +70,7 @@ const ServicesPage: React.FC = () => {
         "Tailored strategic blueprints to meet healthcare facility needs and regulatory standards.",
       quote: "We don't just plan. We future-proof.",
       icon: <BarChart3 className="w-6 h-6" />,
-      color: "green",
+      color: "bg-green-500",
     },
     {
       phase: "BUILD",
@@ -78,7 +79,7 @@ const ServicesPage: React.FC = () => {
         "Construction of modern healthcare infrastructure using cutting-edge technology and sustainable practices.",
       quote: "Strong foundations. Smarter futures.",
       icon: <Building className="w-6 h-6" />,
-      color: "blue",
+      color: "bg-blue-500",
     },
     {
       phase: "COMMISSION",
@@ -87,7 +88,7 @@ const ServicesPage: React.FC = () => {
         "Rigorous facility activation, testing all systems for optimal functionality and compliance.",
       quote: "We turn structures into life-saving ecosystems.",
       icon: <Settings className="w-6 h-6" />,
-      color: "purple",
+      color: "bg-purple-500",
     },
     {
       phase: "MANAGE",
@@ -96,14 +97,14 @@ const ServicesPage: React.FC = () => {
         "Ongoing management services to ensure top-tier operations, patient care, and financial sustainability.",
       quote: "Seamless operations. Sustainable outcomes.",
       icon: <Shield className="w-6 h-6" />,
-      color: "red",
+      color: "bg-red-500",
     },
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-primaryRed text-white">
+      <section className="pt-44 pb-32 bg-gradient-to-br from-green-600 to-primaryRed text-white">
         <SlideIn direction="top" duration={800} delay={200}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
@@ -114,9 +115,11 @@ const ServicesPage: React.FC = () => {
               healthcare landscape through innovation, expertise, and strategic
               partnerships.
             </p>
-            <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Discuss Your Project
-            </button>
+            <Link to={"/contact"}>
+              <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Discuss Your Project
+              </button>
+            </Link>
           </div>
         </SlideIn>
       </section>
@@ -195,7 +198,7 @@ const ServicesPage: React.FC = () => {
                 delay={200 + index * 200}
               >
                 <div
-                  className={`flex flex-col lg:flex-row items-center gap-8 ${
+                  className={`flex flex-col lg:flex-row items-center gap-10 ${
                     index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
                 >
@@ -203,7 +206,7 @@ const ServicesPage: React.FC = () => {
                     <div className="bg-white rounded-2xl shadow-lg p-8">
                       <div className="flex items-center mb-6">
                         <div
-                          className={`w-16 h-16 bg-gradient-to-br from-${step.color}-500 to-${step.color}-600 rounded-full flex items-center justify-center mr-4`}
+                          className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mr-4`}
                         >
                           <span className="text-2xl font-bold text-white">
                             {step.phase[0]}
@@ -213,7 +216,7 @@ const ServicesPage: React.FC = () => {
                           <h3 className="text-2xl font-bold text-primaryGreen">
                             {step.title}
                           </h3>
-                          <p className={`text-${step.color}-600 font-medium`}>
+                          <p className={`text-gray-600 font-medium`}>
                             {step.phase}
                           </p>
                         </div>
@@ -221,20 +224,18 @@ const ServicesPage: React.FC = () => {
                       <p className="text-gray-600 mb-4 leading-relaxed">
                         {step.description}
                       </p>
-                      <p
-                        className={`text-${step.color}-600 font-medium italic`}
-                      >
+                      <p className={`text-gray-600 font-medium italic`}>
                         "{step.quote}"
                       </p>
                     </div>
                   </div>
 
                   <div className="lg:w-1/2">
-                    <div
-                      className={`w-32 h-32 bg-gradient-to-br from-${step.color}-100 to-${step.color}-200 rounded-full flex items-center justify-center mx-auto text-${step.color}-600`}
+                    {/* <div
+                      className={`w-32 h-32 ${step.color} rounded-full flex items-center justify-center mx-auto text-gray-200`}
                     >
                       {step.icon}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SlideIn>
@@ -309,7 +310,7 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primaryGreen text-white">
+      <section className="py-20 bg-gradient-to-r from-green-600 to-primaryRed text-white">
         <SlideIn direction="bottom" duration={800} delay={200}>
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
