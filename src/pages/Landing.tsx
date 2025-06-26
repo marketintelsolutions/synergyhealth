@@ -11,127 +11,14 @@ import {
   Target,
 } from "lucide-react";
 import SlideIn from "../components/Layout/SlideIn";
+import Banner from "../components/Landing/Banner";
+import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    organization: "",
-    email: "",
-    phone: "",
-    country: "",
-    message: "",
-  });
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
-
   return (
-    <div className="pt-16">
+    <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <SlideIn direction="left" duration={800} delay={200}>
-              <div>
-                <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-6">
-                  End-to-End Excellence for Healthcare
-                </div>
-                <h1 className="text-4xl lg:text-6xl font-bold text-primaryGreen mb-6 leading-tight">
-                  Transforming Healthcare
-                  <span className="text-green-600"> Across Africa</span>
-                </h1>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  Synergy Health Solutions delivers future-ready,
-                  patient-centric hospital solutions—designed, built, and
-                  managed for impact. We partner with governments and private
-                  stakeholders to create the healthcare systems Africa needs and
-                  deserves.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center justify-center">
-                    Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
-                  </button>
-                  <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg font-medium hover:bg-green-50 transition-colors">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </SlideIn>
-
-            {/* Hero Form */}
-            <SlideIn direction="right" duration={800} delay={400}>
-              <div className="bg-white rounded-2xl shadow-xl p-8">
-                <h3 className="text-xl font-bold text-primaryGreen mb-6">
-                  Get Your Free Consultation
-                </h3>
-                <div className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Full Name*"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    />
-                    <input
-                      type="text"
-                      name="organization"
-                      placeholder="Organization"
-                      value={formData.organization}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address*"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    />
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Phone Number*"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="Country*"
-                    value={formData.country}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  />
-                  <button
-                    onClick={handleSubmit}
-                    className="w-full bg-primaryGreen text-white py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors"
-                  >
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            </SlideIn>
-          </div>
-        </div>
-      </section>
+      <Banner />
 
       {/* Key Differentiators */}
       <section className="py-16 bg-white">
@@ -216,28 +103,28 @@ const HomePage: React.FC = () => {
                 letter: "P",
                 title: "Plan",
                 desc: "Strategic blueprints for healthcare facility needs",
-                color: "green",
+                color: "bg-green-500",
                 delay: 200,
               },
               {
                 letter: "B",
                 title: "Build",
                 desc: "Modern infrastructure with cutting-edge technology",
-                color: "blue",
+                color: "bg-blue-500",
                 delay: 400,
               },
               {
                 letter: "C",
                 title: "Commission",
                 desc: "Rigorous facility activation and testing",
-                color: "purple",
+                color: "bg-purple-500",
                 delay: 600,
               },
               {
                 letter: "M",
                 title: "Manage",
                 desc: "Ongoing management for operational excellence",
-                color: "red",
+                color: "bg-red-500",
                 delay: 800,
               },
             ].map((item, index) => (
@@ -249,7 +136,7 @@ const HomePage: React.FC = () => {
               >
                 <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                   <div
-                    className={`w-16 h-16 bg-gradient-to-br from-${item.color}-500 to-${item.color}-600 rounded-full flex items-center justify-center mx-auto mb-4`}
+                    className={`w-16 h-16 ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
                   >
                     <span className="text-2xl font-bold text-white">
                       {item.letter}
@@ -258,7 +145,7 @@ const HomePage: React.FC = () => {
                   <h3 className="text-xl font-bold text-primaryGreen mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <p className="text-gray-600 h-12 text-sm">{item.desc}</p>
                 </div>
               </SlideIn>
             ))}
@@ -342,9 +229,11 @@ const HomePage: React.FC = () => {
               better, together."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Schedule Consultation
-              </button>
+              <Link to={"/contact"}>
+                <button className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Schedule Consultation
+                </button>
+              </Link>
               <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
                 Download Brochure
               </button>

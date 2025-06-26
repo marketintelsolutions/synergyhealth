@@ -72,9 +72,9 @@ const AboutPage: React.FC = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-0">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primaryGreen to-green-800 text-white">
+      <section className="pt-44 pb-32 bg-gradient-to-br from-primaryGreen to-green-800 text-white">
         <SlideIn direction="top" duration={800} delay={200}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
