@@ -137,7 +137,7 @@ const AboutPage: React.FC = () => {
             <SlideIn direction="right" duration={700} delay={400}>
               <div className="bg-gradient-to-br from-green-100 to-blue-100 p-8 rounded-2xl">
                 <img
-                  src="/images/banner.jpg"
+                  src="/images/aboutbanner.jpg"
                   alt="woman sitting"
                   className="rounded-2xl"
                 />
