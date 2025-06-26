@@ -48,7 +48,7 @@ const HomePage: React.FC = () => {
 
             <SlideIn direction="bottom" duration={600} delay={400}>
               <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100">
-                <div className="w-16 h-16 bg-primaryRed rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Building className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primaryGreen mb-3">
