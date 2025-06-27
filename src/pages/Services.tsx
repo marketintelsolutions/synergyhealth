@@ -305,7 +305,7 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 from-green-100 to-red-100 text-black">
+      <section className="py-20 bg-green-100 text-black">
         <SlideIn direction="bottom" duration={800} delay={200}>
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">

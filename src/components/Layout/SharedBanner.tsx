@@ -14,7 +14,7 @@ const SharedBanner: React.FC<{
         backgroundSize: "cover",
       }}
     >
-      <div className="h-full pt-44 pb-32 bg-gradient-to-br from-green-200/90 to-red-200/80">
+      <div className="h-full pt-44 pb-32 bg-gradient-to-br from-green-300/90 to-red-300/80">
         <SlideIn direction="top" duration={800} delay={200}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
