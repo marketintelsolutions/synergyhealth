@@ -14,6 +14,42 @@ import SlideIn from "../components/Layout/SlideIn";
 import Banner from "../components/Landing/Banner";
 import { Link } from "react-router-dom";
 
+const clientTypes = [
+  {
+    icon: <Building className="w-8 h-8" />,
+    title: "Government Institutions",
+    description:
+      "Ministries of Health, public hospitals, and state healthcare boards seeking transformation through public-private partnerships.",
+    examples: [
+      "Public Hospital Systems",
+      "Ministry of Health",
+      "Regional Health Authorities",
+    ],
+  },
+  {
+    icon: <Users className="w-8 h-8" />,
+    title: "Private Healthcare Investors",
+    description:
+      "Entrepreneurs and private entities seeking excellence-driven hospital operations.",
+    examples: [
+      "Private Hospital Groups",
+      "Healthcare Investors",
+      "Medical Facility Developers",
+    ],
+  },
+  {
+    icon: <Heart className="w-8 h-8" />,
+    title: "Development Partners & NGOs",
+    description:
+      "Agencies championing healthcare access and system strengthening.",
+    examples: [
+      "International NGOs",
+      "Development Banks",
+      "Healthcare Foundations",
+    ],
+  },
+];
+
 const HomePage: React.FC = () => {
   return (
     <div className="pt-0">
@@ -88,7 +124,7 @@ const HomePage: React.FC = () => {
                 Our Proven Methodology
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-primaryGreen mb-6">
-                The PBCM Framework
+                The <span className="font-extrabold ">PBCM</span> Framework
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 A 360° methodology designed for hospital excellence - from
@@ -97,122 +133,204 @@ const HomePage: React.FC = () => {
             </div>
           </SlideIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                letter: "P",
-                title: "Plan",
-                desc: "Strategic blueprints for healthcare facility needs",
-                color: "bg-green-500",
-                delay: 200,
-              },
-              {
-                letter: "B",
-                title: "Build",
-                desc: "Modern infrastructure with cutting-edge technology",
-                color: "bg-blue-500",
-                delay: 400,
-              },
-              {
-                letter: "C",
-                title: "Commission",
-                desc: "Rigorous facility activation and testing",
-                color: "bg-purple-500",
-                delay: 600,
-              },
-              {
-                letter: "M",
-                title: "Manage",
-                desc: "Ongoing management for operational excellence",
-                color: "bg-red-500",
-                delay: 800,
-              },
-            ].map((item, index) => (
-              <SlideIn
-                key={index}
-                direction="bottom"
-                duration={600}
-                delay={item.delay}
-              >
-                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+          <div className="flex gap-10 items-center">
+            <div className="w-[55%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+              <img
+                src="/images/pbcmimg.jpg"
+                alt="pbcm img"
+                className="w-full object-cover rounded-[16px]"
+              />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              {[
+                {
+                  letter: "p",
+                  title: "Plan",
+                  desc: "Strategic blueprints for healthcare facility needs",
+                  color: "bg-green-500",
+                  delay: 200,
+                  hover: "hover:bg-green-100",
+                },
+                {
+                  letter: "b",
+                  title: "Build",
+                  desc: "Modern infrastructure with cutting-edge technology",
+                  color: "bg-red-500",
+                  delay: 400,
+                  hover: "hover:bg-red-100",
+                },
+                {
+                  letter: "c",
+                  title: "Commission",
+                  desc: "Rigorous facility activation and testing",
+                  color: "bg-red-500",
+                  delay: 600,
+                  hover: "hover:bg-red-100",
+                },
+                {
+                  letter: "m",
+                  title: "Manage",
+                  desc: "Ongoing management for operational excellence",
+                  color: "bg-green-500",
+                  delay: 800,
+                  hover: "hover:bg-green-100",
+                },
+              ].map((item, index) => (
+                <SlideIn
+                  key={index}
+                  direction="bottom"
+                  duration={600}
+                  delay={item.delay}
+                >
                   <div
-                    className={`w-16 h-16 ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
+                    className={`bg-white ${item.hover} rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow`}
                   >
-                    <span className="text-2xl font-bold text-white">
-                      {item.letter}
-                    </span>
+                    <div
+                      className={`p-2 w-fit ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
+                    >
+                      <img
+                        src={`/images/${item.letter}.png`}
+                        className="w-[50px] font-bold text-white"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-primaryGreen mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 h-12 text-sm">{item.desc}</p>
                   </div>
-                  <h3 className="text-xl font-bold text-primaryGreen mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 h-12 text-sm">{item.desc}</p>
-                </div>
-              </SlideIn>
-            ))}
+                </SlideIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-primaryGreen text-white">
+      <section className="relative   text-white">
+        <div className="sticky top-0 left-0">
+          <img
+            src="/images/building.jpg"
+            alt="image"
+            className="w-full h-lvh object-cover"
+          />
+        </div>
+        <div className="bg-[#00000048] py-40 relative z-[2]">
+          <div className="max-w-7xl   mx-auto px-4 sm:px-6 lg:px-8">
+            <SlideIn direction="top" duration={700} delay={100}>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+                  Our Impact Across Africa
+                </h2>
+                <p className="text-lg text-green-100 max-w-3xl mx-auto">
+                  Transforming healthcare landscapes and building stronger, more
+                  sustainable health systems
+                </p>
+              </div>
+            </SlideIn>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <SlideIn direction="left" duration={600} delay={200}>
+                <div className="p-6">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    Improved Patient Outcomes
+                  </h3>
+                  <p className="text-green-100">
+                    Enhanced quality of care through modern infrastructure and
+                    efficient management systems
+                  </p>
+                </div>
+              </SlideIn>
+
+              <SlideIn direction="bottom" duration={600} delay={400}>
+                <div className="p-6">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Building className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    Enhanced Hospital Sustainability
+                  </h3>
+                  <p className="text-green-100">
+                    Financial viability and operational excellence ensuring
+                    long-term success
+                  </p>
+                </div>
+              </SlideIn>
+
+              <SlideIn direction="right" duration={600} delay={600}>
+                <div className="p-6">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    Strengthened Health Systems
+                  </h3>
+                  <p className="text-green-100">
+                    Comprehensive solutions serving both urban and rural
+                    communities effectively
+                  </p>
+                </div>
+              </SlideIn>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SlideIn direction="top" duration={700} delay={100}>
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Our Impact Across Africa
+              <h2 className="text-3xl lg:text-4xl font-bold text-primaryGreen mb-6">
+                Who We Work With
               </h2>
-              <p className="text-lg text-green-100 max-w-3xl mx-auto">
-                Transforming healthcare landscapes and building stronger, more
-                sustainable health systems
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                From government institutions to private investors, we partner
+                with organizations committed to healthcare excellence.
               </p>
             </div>
           </SlideIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <SlideIn direction="left" duration={600} delay={200}>
-              <div className="p-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Improved Patient Outcomes
-                </h3>
-                <p className="text-green-100">
-                  Enhanced quality of care through modern infrastructure and
-                  efficient management systems
-                </p>
-              </div>
-            </SlideIn>
+          <div className="space-y-8">
+            {clientTypes.map((client, index) => (
+              <SlideIn
+                key={index}
+                direction={index % 2 === 0 ? "left" : "right"}
+                duration={700}
+                delay={200 + index * 200}
+              >
+                <div className="bg-gray-50 rounded-2xl p-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                    <div className="text-center lg:text-left">
+                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 text-green-600">
+                        {client.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-primaryGreen mb-2">
+                        {client.title}
+                      </h3>
+                    </div>
 
-            <SlideIn direction="bottom" duration={600} delay={400}>
-              <div className="p-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Building className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Enhanced Hospital Sustainability
-                </h3>
-                <p className="text-green-100">
-                  Financial viability and operational excellence ensuring
-                  long-term success
-                </p>
-              </div>
-            </SlideIn>
+                    <div className="lg:col-span-1">
+                      <p className="text-gray-600">{client.description}</p>
+                    </div>
 
-            <SlideIn direction="right" duration={600} delay={600}>
-              <div className="p-6">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-white" />
+                    <div>
+                      <h4 className="font-semibold text-primaryGreen mb-3">
+                        Examples:
+                      </h4>
+                      <ul className="space-y-1">
+                        {client.examples.map((example, eIndex) => (
+                          <li key={eIndex} className="text-gray-600 text-sm">
+                            • {example}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Strengthened Health Systems
-                </h3>
-                <p className="text-green-100">
-                  Comprehensive solutions serving both urban and rural
-                  communities effectively
-                </p>
-              </div>
-            </SlideIn>
+              </SlideIn>
+            ))}
           </div>
         </div>
       </section>

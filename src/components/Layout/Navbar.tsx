@@ -23,17 +23,17 @@ const Navbar: React.FC<NavbarProps> = () => {
   useEffect(() => setCurrentPage(pathname.split("/")[1]), [pathname]);
 
   return (
-    <nav className="fixed top-0 w-full bg-[#ffffff7a]  backdrop-blur-[3.5px] shadow-sm z-50">
+    <nav className="sticky top-0 w-full bg-white  backdrop-blur-[3.5px] shadow-sm z-50">
       <div className="max-w-7xl py-3 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex py-0 justify-between items-center ">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <Link to={"/"} className="flex-shrink-0">
             <img
               src="/images/logo.svg"
               alt="logo"
               className="w-full max-w-[220px]"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex  w-[65%] justify-between">

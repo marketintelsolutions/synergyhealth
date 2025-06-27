@@ -12,35 +12,49 @@ import {
   Star,
 } from "lucide-react";
 import SlideIn from "../components/Layout/SlideIn";
+import SharedBanner from "../components/Layout/SharedBanner";
 
 const AboutPage: React.FC = () => {
   const values = [
     {
       letter: "C",
       title: "Collaboration",
-      description:
+      desc:
         "We build partnerships that drive progress and create lasting impact.",
       icon: <Handshake className="w-6 h-6" />,
+      color: "bg-green-500",
+      delay: 200,
+      hover: "hover:bg-green-100",
     },
     {
       letter: "A",
       title: "Accountability",
-      description:
+      desc:
         "We deliver on our word with integrity and take responsibility for outcomes.",
       icon: <Award className="w-6 h-6" />,
+      color: "bg-red-500",
+      delay: 400,
+      hover: "hover:bg-red-100",
     },
     {
       letter: "R",
       title: "Respect",
-      description: "We honor people, culture, and context in everything we do.",
+      desc: "We honor people, culture, and context in everything we do.",
       icon: <Users className="w-6 h-6" />,
+      color: "bg-red-500",
+      delay: 400,
+      hover: "hover:bg-red-100",
     },
     {
       letter: "E",
       title: "Excellence",
-      description:
+      desc:
         "We go beyond expectations, always striving for the highest standards.",
       icon: <Star className="w-6 h-6" />,
+
+      color: "bg-green-500",
+      delay: 200,
+      hover: "hover:bg-green-100",
     },
   ];
 
@@ -74,21 +88,11 @@ const AboutPage: React.FC = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="pt-44 pb-32 bg-gradient-to-br from-primaryGreen to-green-800 text-white">
-        <SlideIn direction="top" duration={800} delay={200}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-                About Synergy Health Solutions
-              </h1>
-              <p className="text-xl text-green-100 max-w-3xl mx-auto">
-                We're not just building hospitals. We're building healthier
-                futures across Africa.
-              </p>
-            </div>
-          </div>
-        </SlideIn>
-      </section>
+      <SharedBanner
+        heading="About Synergy Health Solutions"
+        text="We're not just building hospitals. We're building healthier
+              futures across Africa."
+      />
 
       {/* Who We Are */}
       <section className="py-20 bg-white">
@@ -135,7 +139,7 @@ const AboutPage: React.FC = () => {
             </SlideIn>
 
             <SlideIn direction="right" duration={700} delay={400}>
-              <div className="bg-gradient-to-br from-green-100 to-blue-100 p-8 rounded-2xl">
+              <div className="bg-gradient-to-br from-green-100 to-red-50 p-8 rounded-2xl">
                 <img
                   src="/images/aboutbanner.jpg"
                   alt="woman sitting"
@@ -157,11 +161,11 @@ const AboutPage: React.FC = () => {
                   <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mr-4">
                     <Eye className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-primaryGreen">
+                  <h3 className="text-2xl font-bold text-primaryRed">
                     Our Vision
                   </h3>
                 </div>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-600 h-[100px] leading-relaxed">
                   To be the leading force in transforming healthcare management
                   and infrastructure across Africa—renowned for excellence,
                   innovation, and patient-centered care.
@@ -179,7 +183,7 @@ const AboutPage: React.FC = () => {
                     Our Mission
                   </h3>
                 </div>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg h-[100px] text-gray-600 leading-relaxed">
                   Delivering excellent support to strengthen sustainable
                   healthcare value propositions across Africa through our proven
                   PBCM methodology.
@@ -214,14 +218,14 @@ const AboutPage: React.FC = () => {
                 duration={600}
                 delay={200 + index * 150}
               >
-                <div className="text-center p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="text-center p-6 rounded-xl hover:bg-green-100 border border-gray-200 hover:shadow-lg transition-shadow">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
                     {pillar.icon}
                   </div>
                   <h3 className="text-xl font-bold text-primaryGreen mb-3">
                     {pillar.title}
                   </h3>
-                  <p className="text-gray-600">{pillar.description}</p>
+                  <p className="text-gray-600 h-20">{pillar.description}</p>
                 </div>
               </SlideIn>
             ))}
@@ -229,56 +233,59 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* C.A.R.E Values */}
-      <section className="py-20 bg-primaryGreen text-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SlideIn direction="top" duration={700} delay={100}>
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
                 Our Core Values: C.A.R.E
-              </h2>
-              <p className="text-lg text-green-100 max-w-3xl mx-auto">
+              </div>
+              <h2 className="text-2xl max-w-[70%] mx-auto lg:text-3xl font-bold text-primaryGreen mb-6">
                 At Synergy Health Solutions, we are guided by our foundational
                 values that drive everything we do.
-              </p>
+              </h2>
+              {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+             
+              </p> */}
             </div>
           </SlideIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-              <SlideIn
-                key={index}
-                direction={index % 2 === 0 ? "left" : "right"}
-                duration={600}
-                delay={200 + index * 200}
-              >
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-2xl font-bold text-white">
-                        {value.letter}
-                      </span>
+          <div className="flex gap-10 items-center">
+            <div className="w-[55%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+              <img
+                src="/images/pbcmimg.jpg"
+                alt="pbcm img"
+                className="w-full object-cover rounded-[16px]"
+              />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              {values.map((item, index) => (
+                <SlideIn
+                  key={index}
+                  direction="bottom"
+                  duration={600}
+                  delay={200 + index * 200}
+                >
+                  <div
+                    className={`bg-white ${item.hover} rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow`}
+                  >
+                    <div
+                      className={`p-2 w-fit ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
+                    >
+                      <img
+                        src={`/images/${item.letter}.png`}
+                        className="w-[50px] font-bold text-white"
+                      />
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-1">
-                        {value.title}
-                      </h3>
-                      <div className="text-green-200">{value.icon}</div>
-                    </div>
+                    <h3 className="text-xl font-bold text-primaryGreen mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 h-12 text-sm">{item.desc}</p>
                   </div>
-                  <p className="text-green-100">{value.description}</p>
-                </div>
-              </SlideIn>
-            ))}
-          </div>
-
-          <SlideIn direction="bottom" duration={700} delay={800}>
-            <div className="text-center mt-12">
-              <p className="text-xl italic text-green-100">
-                "We don't just deliver services. We deliver trust."
-              </p>
+                </SlideIn>
+              ))}
             </div>
-          </SlideIn>
+          </div>
         </div>
       </section>
 
