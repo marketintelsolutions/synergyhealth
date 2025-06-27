@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
 
       {/* PBCM Framework Preview */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1300] mx-auto px-4 sm:px-6 lg:px-8">
           <SlideIn direction="top" duration={700} delay={100}>
             <div className="text-center mb-16">
               <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
@@ -134,7 +134,7 @@ const HomePage: React.FC = () => {
           </SlideIn>
 
           <div className="flex gap-10 items-center">
-            <div className="w-[55%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+            <div className="w-[50%] h-full p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
               <img
                 src="/images/pbcmimg.jpg"
                 alt="pbcm img"
@@ -336,23 +336,23 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-tr from-[#16a34abb] via-[#16a34abb] to-[#d58b84bf]">
+      <section className="py-20 bg-gradient-to-tr from-green-100 to-red-100">
         <SlideIn direction="bottom" duration={800} delay={200}>
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6">
               Ready to Transform Your Healthcare Project?
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-black/90 mb-8">
               "Tomorrow's healthcare starts with today's decisions. Let's build
               better, together."
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={"/contact"}>
-                <button className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Schedule Consultation
                 </button>
               </Link>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+              <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black/10 transition-colors">
                 Download Brochure
               </button>
             </div>
