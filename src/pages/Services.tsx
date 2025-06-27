@@ -305,21 +305,21 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-primaryRed text-white">
+      <section className="py-20 from-green-100 to-red-100 text-black">
         <SlideIn direction="bottom" duration={800} delay={200}>
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Ready to Transform Healthcare Delivery?
             </h2>
-            <p className="text-xl text-green-100 mb-8">
+            <p className="text-xl text-black mb-8">
               Let's discuss how our comprehensive solutions can address your
               specific healthcare challenges and opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button className="bg-black text-gray-100 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Schedule Consultation
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+              <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black/10 transition-colors">
                 Request Proposal
               </button>
             </div>

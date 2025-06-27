@@ -72,7 +72,7 @@ const Banner = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to={"/services"}>
-                  <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center justify-center">
+                  <button className="bg-green-600 border-2 border-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center justify-center">
                     Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
                   </button>
                 </Link>
