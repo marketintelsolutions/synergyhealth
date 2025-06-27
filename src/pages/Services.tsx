@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import SlideIn from "../components/Layout/SlideIn";
 import { Link } from "react-router-dom";
+import SharedBanner from "../components/Layout/SharedBanner";
 
 const ServicesPage: React.FC = () => {
   const services = [
@@ -104,25 +105,12 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="pt-44 pb-32 bg-gradient-to-br from-green-600 to-primaryRed text-white">
-        <SlideIn direction="top" duration={800} delay={200}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Our Services
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-              Comprehensive healthcare solutions designed to transform Africa's
+      <SharedBanner
+        heading="Our Services"
+        text="Comprehensive healthcare solutions designed to transform Africa's
               healthcare landscape through innovation, expertise, and strategic
-              partnerships.
-            </p>
-            <Link to={"/contact"}>
-              <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Discuss Your Project
-              </button>
-            </Link>
-          </div>
-        </SlideIn>
-      </section>
+              partnerships."
+      />
 
       {/* Main Services */}
       <section className="py-20 bg-white">
@@ -175,11 +163,18 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* PBCM Framework Detail */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden py-20 bg-gray-50">
+        <div className="w-full h-full   absolute top-0 left-0 flex justify-center items-center">
+          <img
+            src="/images/dna.jpg"
+            alt="dna"
+            className="object-cover pt-0  w-full"
+          />
+        </div>
+        <div className="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SlideIn direction="top" duration={700} delay={100}>
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-primaryGreen mb-6">
+              <h2 className="text-3xl lg:text-6xl font-bold text-primaryGreen mb-6">
                 Our PBCM Framework
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -277,11 +272,11 @@ const ServicesPage: React.FC = () => {
             </SlideIn>
 
             <SlideIn direction="bottom" duration={600} delay={400}>
-              <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+              <div className="text-center p-8 bg-gradient-to-br from-red-50 to-red-100 rounded-xl">
                 <div className="w-16 h-16 bg-primaryRed rounded-full flex items-center justify-center mx-auto mb-6">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-primaryGreen mb-4">
+                <h3 className="text-xl font-bold text-primaryRed mb-4">
                   Private Healthcare Investors
                 </h3>
                 <p className="text-gray-600">
@@ -292,8 +287,8 @@ const ServicesPage: React.FC = () => {
             </SlideIn>
 
             <SlideIn direction="right" duration={600} delay={600}>
-              <div className="text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
-                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-primaryGreen mb-4">

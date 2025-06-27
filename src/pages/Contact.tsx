@@ -12,6 +12,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import SlideIn from "../components/Layout/SlideIn";
+import SharedBanner from "../components/Layout/SharedBanner";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,7 @@ const ContactPage: React.FC = () => {
         "off Adeola Odeku, Victoria Island",
         "Lagos, Nigeria",
       ],
-      color: "green",
+      color: "bg-green-100",
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -58,7 +59,7 @@ const ContactPage: React.FC = () => {
         "info@synergyhealthsolutions.org",
         "General Inquiries & Partnerships",
       ],
-      color: "blue",
+      color: "bg-red-100",
     },
     {
       icon: <Globe className="w-6 h-6" />,
@@ -67,64 +68,20 @@ const ContactPage: React.FC = () => {
         "www.synergyhealthsolutions.org",
         "LinkedIn: Synergy Health Solutions",
       ],
-      color: "purple",
-    },
-  ];
-
-  const clientTypes = [
-    {
-      icon: <Building className="w-8 h-8" />,
-      title: "Government Institutions",
-      description:
-        "Ministries of Health, public hospitals, and state healthcare boards seeking transformation through public-private partnerships.",
-      examples: [
-        "Public Hospital Systems",
-        "Ministry of Health",
-        "Regional Health Authorities",
-      ],
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Private Healthcare Investors",
-      description:
-        "Entrepreneurs and private entities seeking excellence-driven hospital operations.",
-      examples: [
-        "Private Hospital Groups",
-        "Healthcare Investors",
-        "Medical Facility Developers",
-      ],
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Development Partners & NGOs",
-      description:
-        "Agencies championing healthcare access and system strengthening.",
-      examples: [
-        "International NGOs",
-        "Development Banks",
-        "Healthcare Foundations",
-      ],
+      color: "bg-green-100",
     },
   ];
 
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <section className="pt-44 pb-32 bg-gradient-to-br from-primaryGreen to-green-800 text-white">
-        <SlideIn direction="top" duration={800} delay={200}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Let's Build a Healthier Future
-            </h1>
-            <p className="text-xl text-green-100 max-w-3xl mx-auto">
-              Partner with Synergy Health Solutions to create the healthcare
-              systems Africa needs and deserves. Tomorrow's healthcare starts
-              with today's decisions.
-            </p>
-          </div>
-        </SlideIn>
-      </section>
 
+      <SharedBanner
+        heading="Let's Build a Healthier Future"
+        text=" Partner with Synergy Health Solutions to create the healthcare
+              systems Africa needs and deserves. Tomorrow's healthcare starts
+              with today's decisions."
+      />
       {/* Contact Methods */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -148,9 +105,9 @@ const ContactPage: React.FC = () => {
                 duration={600}
                 delay={200 + index * 200}
               >
-                <div className="text-center p-8 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="text-center p-8 bg-gray-50 h-[280px] rounded-xl hover:shadow-lg transition-shadow">
                   <div
-                    className={`w-16 h-16 bg-${method.color}-100 rounded-full flex items-center justify-center mx-auto mb-6 text-${method.color}-600`}
+                    className={`w-16 h-16 ${method.color} rounded-full flex items-center justify-center mx-auto mb-6 `}
                   >
                     {method.icon}
                   </div>
@@ -168,7 +125,6 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Contact Form & Info */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -349,64 +305,15 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
-
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7037020698344!2d3.409201775240221!3d6.432094793559022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ad0e16842f3%3A0x3d9a06e8b5a2c72a!2s8A%20Elsie%20Femi%20Pearse%20St%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1751036436712!5m2!1sen!2suk"
+          width="100%"
+          height="450"
+          loading="lazy"
+        ></iframe>
+      </div>
       {/* Client Types */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SlideIn direction="top" duration={700} delay={100}>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-primaryGreen mb-6">
-                Who We Work With
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                From government institutions to private investors, we partner
-                with organizations committed to healthcare excellence.
-              </p>
-            </div>
-          </SlideIn>
-
-          <div className="space-y-8">
-            {clientTypes.map((client, index) => (
-              <SlideIn
-                key={index}
-                direction={index % 2 === 0 ? "left" : "right"}
-                duration={700}
-                delay={200 + index * 200}
-              >
-                <div className="bg-gray-50 rounded-2xl p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-                    <div className="text-center lg:text-left">
-                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4 text-green-600">
-                        {client.icon}
-                      </div>
-                      <h3 className="text-xl font-bold text-primaryGreen mb-2">
-                        {client.title}
-                      </h3>
-                    </div>
-
-                    <div className="lg:col-span-1">
-                      <p className="text-gray-600">{client.description}</p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-primaryGreen mb-3">
-                        Examples:
-                      </h4>
-                      <ul className="space-y-1">
-                        {client.examples.map((example, eIndex) => (
-                          <li key={eIndex} className="text-gray-600 text-sm">
-                            • {example}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </SlideIn>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

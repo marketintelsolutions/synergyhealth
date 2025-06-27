@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { act, useEffect, useState } from "react";
 import SlideIn from "../Layout/SlideIn";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const images = ["banner", "bannertwo", "bannerthree"];
 
 const Banner = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +15,8 @@ const Banner = () => {
     message: "",
   });
 
+  const [activeImage, setActiveImage] = useState(0);
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -20,6 +25,18 @@ const Banner = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (activeImage === images.length - 1) {
+        setActiveImage(0);
+        return;
+      }
+      setActiveImage((prev) => prev + 1);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, [activeImage]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,12 +48,12 @@ const Banner = () => {
       //   className="py-40  bg-gradient-to-br from-green-50 to-blue-50 overflow-hidden"
       className="relative py-28  "
       style={{
-        backgroundImage: `url(/images/banner.jpg)`,
+        backgroundImage: `url(/images/${images[activeImage]}.jpg)`,
         backgroundSize: "cover",
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full opacity-55 bg-gradient-to-br from-[#848786] to-[#7a7d80]"></div>
-      <div className="relative pt-20 z-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative pt-10 z-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <SlideIn direction="left" duration={800} delay={200}>
             <div>
@@ -54,12 +71,16 @@ const Banner = () => {
                 healthcare systems Africa needs and deserves.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center justify-center">
-                  Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:border-green-700 hover:bg-green-700 transition-colors">
-                  Learn More
-                </button>
+                <Link to={"/services"}>
+                  <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center justify-center">
+                    Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
+                  </button>
+                </Link>
+                <Link to={"/about"}>
+                  <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:border-green-700 hover:bg-green-700 transition-colors">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
           </SlideIn>
