@@ -163,78 +163,80 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* PBCM Framework Detail */}
-      <section className="relative overflow-hidden py-20 bg-gray-50">
-        <div className="w-full h-full   absolute top-0 left-0 flex justify-center items-center">
+      <section className="relative overflow-hidden  bg-gray-50">
+        <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center">
           <img
             src="/images/dna.jpg"
             alt="dna"
             className="object-cover pt-0  w-full"
           />
         </div>
-        <div className="relative z-[2] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SlideIn direction="top" duration={700} delay={100}>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-6xl font-bold text-primaryGreen mb-6">
-                Our PBCM Framework
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                A proven 360° methodology designed for hospital excellence,
-                ensuring every project delivers measurable impact.
-              </p>
-            </div>
-          </SlideIn>
+        <div className="relative  z-[2]  py-20 bg-black/40">
+          <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SlideIn direction="top" duration={700} delay={100}>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-6xl font-bold text-white mb-6">
+                  Our PBCM Framework
+                </h2>
+                <p className="text-lg text-gray-100 max-w-3xl mx-auto">
+                  A proven 360° methodology designed for hospital excellence,
+                  ensuring every project delivers measurable impact.
+                </p>
+              </div>
+            </SlideIn>
 
-          <div className="space-y-12">
-            {pbcmSteps.map((step, index) => (
-              <SlideIn
-                key={index}
-                direction={index % 2 === 0 ? "left" : "right"}
-                duration={700}
-                delay={200 + index * 200}
-              >
-                <div
-                  className={`flex flex-col lg:flex-row items-center gap-10 ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
+            <div className="space-y-12">
+              {pbcmSteps.map((step, index) => (
+                <SlideIn
+                  key={index}
+                  direction={index % 2 === 0 ? "left" : "right"}
+                  duration={700}
+                  delay={200 + index * 200}
                 >
-                  <div className="lg:w-1/2">
-                    <div className="bg-white rounded-2xl shadow-lg p-8">
-                      <div className="flex items-center mb-6">
-                        <div
-                          className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mr-4`}
-                        >
-                          <span className="text-2xl font-bold text-white">
-                            {step.phase[0]}
-                          </span>
+                  <div
+                    className={`flex flex-col lg:flex-row items-center gap-10 ${
+                      index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
+                  >
+                    <div className="lg:w-1/2">
+                      <div className="bg-white rounded-2xl shadow-lg p-8">
+                        <div className="flex items-center mb-6">
+                          <div
+                            className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mr-4`}
+                          >
+                            <span className="text-2xl font-bold text-white">
+                              {step.phase[0]}
+                            </span>
+                          </div>
+                          <div>
+                            <h3 className="text-2xl font-bold text-primaryGreen">
+                              {step.title}
+                            </h3>
+                            <p className={`text-gray-600 font-medium`}>
+                              {step.phase}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="text-2xl font-bold text-primaryGreen">
-                            {step.title}
-                          </h3>
-                          <p className={`text-gray-600 font-medium`}>
-                            {step.phase}
-                          </p>
-                        </div>
+                        <p className="text-gray-600 mb-4 leading-relaxed">
+                          {step.description}
+                        </p>
+                        <p className={`text-gray-600 font-medium italic`}>
+                          "{step.quote}"
+                        </p>
                       </div>
-                      <p className="text-gray-600 mb-4 leading-relaxed">
-                        {step.description}
-                      </p>
-                      <p className={`text-gray-600 font-medium italic`}>
-                        "{step.quote}"
-                      </p>
+                    </div>
+
+                    <div className="lg:w-1/2">
+                      {/* <div
+                        className={`w-32 h-32 ${step.color} rounded-full flex items-center justify-center mx-auto text-gray-200`}
+                      >
+                        {step.icon}
+                      </div> */}
                     </div>
                   </div>
-
-                  <div className="lg:w-1/2">
-                    {/* <div
-                      className={`w-32 h-32 ${step.color} rounded-full flex items-center justify-center mx-auto text-gray-200`}
-                    >
-                      {step.icon}
-                    </div> */}
-                  </div>
-                </div>
-              </SlideIn>
-            ))}
+                </SlideIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
