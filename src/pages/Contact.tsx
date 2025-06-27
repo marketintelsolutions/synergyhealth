@@ -305,6 +305,14 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7037020698344!2d3.409201775240221!3d6.432094793559022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ad0e16842f3%3A0x3d9a06e8b5a2c72a!2s8A%20Elsie%20Femi%20Pearse%20St%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1751036436712!5m2!1sen!2suk"
+          width="100%"
+          height="450"
+          loading="lazy"
+        ></iframe>
+      </div>
       {/* Client Types */}
     </div>
   );
