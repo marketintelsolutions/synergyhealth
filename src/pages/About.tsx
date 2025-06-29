@@ -169,7 +169,7 @@ const AboutPage: React.FC = () => {
                     Our Vision
                   </h3>
                 </div>
-                <p className="text-lg text-gray-600 h-[100px] leading-relaxed">
+                <p className="text-lg text-gray-600 md:h-[100px] leading-relaxed">
                   To be the leading force in transforming healthcare management
                   and infrastructure across Africa—renowned for excellence,
                   innovation, and patient-centered care.
@@ -246,7 +246,7 @@ const AboutPage: React.FC = () => {
               <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-4">
                 Our Core Values: C.A.R.E
               </div>
-              <h2 className="text-2xl max-w-[70%] mx-auto lg:text-3xl font-bold text-primaryGreen mb-6">
+              <h2 className="text-2xl md:max-w-[70%] mx-auto lg:text-3xl font-bold text-primaryGreen mb-6">
                 At Synergy Health Solutions, we are guided by our foundational
                 values that drive everything we do.
               </h2>
@@ -256,8 +256,8 @@ const AboutPage: React.FC = () => {
             </div>
           </SlideIn>
 
-          <div className="flex gap-10 items-center">
-            <div className="w-[55%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+          <div className="flex flex-wrap md:flex-nowrap gap-10 items-center">
+            <div className="w-full md:w-[70%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
               <img
                 src="/images/pbcmimg.jpg"
                 alt="pbcm img"
