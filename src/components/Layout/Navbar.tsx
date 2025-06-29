@@ -7,8 +7,8 @@ interface NavbarProps {
 }
 
 const navigation = [
-  { name: "Home", href: "/", id: "" },
   { name: "About", href: "/about", id: "about" },
+  { name: "Team", href: "/team", id: "team" },
   { name: "Services", href: "/services", id: "services" },
   { name: "Contact", href: "/contact", id: "contact" },
 ];
@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                   href={item.href}
                   className={`px-3 py-2 text-lg font-bold transition-colors ${
                     currentPage === item.id
-                      ? "text-primaryGreen border-b-2 border-green-600"
+                      ? "text-primaryRed border-b-2 border-primaryRed"
                       : "text-gray-600 hover:text-primaryGreen"
                   }`}
                 >

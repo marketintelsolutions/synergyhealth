@@ -8,12 +8,15 @@ const MainLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const { pathname } = window.location;
+  const { pathname, hash } = window.location;
+  console.log("pathname", window.location);
+
   const params = useParams();
 
   useEffect(() => {
+    if (hash) return;
     window.scroll(0, 0);
-  }, [pathname, params]);
+  }, [pathname, params, hash]);
 
   return (
     <>

@@ -5,6 +5,7 @@ import Landing from "./pages/Landing";
 import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
+import Team from "./pages/Team";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,14 @@ function App() {
       element: (
         <MainLayout>
           <AboutPage />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/team",
+      element: (
+        <MainLayout>
+          <Team />
         </MainLayout>
       ),
     },
