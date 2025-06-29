@@ -164,21 +164,21 @@ const ServicesPage: React.FC = () => {
 
       {/* PBCM Framework Detail */}
       <section className="relative overflow-hidden  bg-gray-50">
-        <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center">
+        {/* <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center">
           <img
             src="/images/dna.jpg"
             alt="dna"
             className="object-cover pt-0  w-full"
           />
-        </div>
-        <div className="relative  z-[2]  py-20 bg-black/40">
+        </div> */}
+        <div className="relative  z-[2]  py-20 ">
           <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SlideIn direction="top" duration={700} delay={100}>
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-6xl font-bold text-white mb-6">
+                <h2 className="text-3xl lg:text-6xl font-bold text-primaryGreen mb-6">
                   Our PBCM Framework
                 </h2>
-                <p className="text-lg text-gray-100 max-w-3xl mx-auto">
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                   A proven 360° methodology designed for hospital excellence,
                   ensuring every project delivers measurable impact.
                 </p>
@@ -202,11 +202,13 @@ const ServicesPage: React.FC = () => {
                       <div className="bg-white rounded-2xl shadow-lg p-8">
                         <div className="flex items-center mb-6">
                           <div
-                            className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mr-4`}
+                            className={`w-fit p-4 ${step.color} rounded-full flex items-center justify-center mr-4`}
                           >
-                            <span className="text-2xl font-bold text-white">
-                              {step.phase[0]}
-                            </span>
+                            <img
+                              src={`/images/${step.phase[0]}.png`}
+                              alt={step.phase}
+                              className="w-[50px]"
+                            />
                           </div>
                           <div>
                             <h3 className="text-2xl font-bold text-primaryGreen">
@@ -318,12 +320,16 @@ const ServicesPage: React.FC = () => {
               specific healthcare challenges and opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-black text-gray-100 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Schedule Consultation
-              </button>
-              <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black/10 transition-colors">
-                Request Proposal
-              </button>
+              <a href={"contact#formsection"}>
+                <button className="bg-black border-2 border-black hover:border-green-700 text-gray-100 px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                  Schedule Consultation
+                </button>
+              </a>
+              <Link to="/contact#formsection">
+                <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black/10 transition-colors">
+                  Request Proposal
+                </button>
+              </Link>
             </div>
           </div>
         </SlideIn>

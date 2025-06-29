@@ -64,24 +64,28 @@ const AboutPage: React.FC = () => {
       description:
         "Integrating advanced technologies and global best practices.",
       icon: <Lightbulb className="w-8 h-8" />,
+      hover: "hover:bg-red-100",
     },
     {
       title: "Sustainability",
       description:
         "Building systems that are economically, socially, and environmentally viable.",
       icon: <Recycle className="w-8 h-8" />,
+      hover: "hover:bg-green-100",
     },
     {
       title: "Local Relevance",
       description:
         "Solutions tailored to community needs and cultural dynamics.",
       icon: <MapPin className="w-8 h-8" />,
+      hover: "hover:bg-red-100",
     },
     {
       title: "Operational Excellence",
       description:
         "Optimizing every function from management to patient experience.",
       icon: <Target className="w-8 h-8" />,
+      hover: "hover:bg-green-100",
     },
   ];
 
@@ -218,7 +222,9 @@ const AboutPage: React.FC = () => {
                 duration={600}
                 delay={200 + index * 150}
               >
-                <div className="text-center p-6 rounded-xl hover:bg-green-100 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div
+                  className={`text-center p-6 rounded-xl ${pillar.hover} border border-gray-200 hover:shadow-lg transition-shadow`}
+                >
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
                     {pillar.icon}
                   </div>

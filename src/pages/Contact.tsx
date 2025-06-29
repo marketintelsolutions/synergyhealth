@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   MapPin,
   Mail,
@@ -24,6 +24,16 @@ const ContactPage: React.FC = () => {
     service: "",
     message: "",
   });
+
+  const formsectionRef = useRef<HTMLDivElement>(null);
+
+  const { hash } = window.location;
+
+  useEffect(() => {
+    if (hash) {
+      formsectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [hash]);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -126,8 +136,11 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
       {/* Contact Form & Info */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section ref={formsectionRef} className="py-40 bg-gray-50">
+        <div
+          id="formsection"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <SlideIn direction="left" duration={700} delay={200}>
