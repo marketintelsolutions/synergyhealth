@@ -256,8 +256,8 @@ const AboutPage: React.FC = () => {
             </div>
           </SlideIn>
 
-          <div className="flex flex-wrap gap-10 items-center">
-            <div className="w-full md:w-[55%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+          <div className="flex flex-wrap md:flex-nowrap gap-10 items-center">
+            <div className="w-full md:w-[70%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
               <img
                 src="/images/pbcmimg.jpg"
                 alt="pbcm img"
