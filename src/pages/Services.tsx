@@ -72,6 +72,7 @@ const ServicesPage: React.FC = () => {
       quote: "We don't just plan. We future-proof.",
       icon: <BarChart3 className="w-6 h-6" />,
       color: "bg-green-500",
+      img: "strategic",
     },
     {
       phase: "BUILD",
@@ -81,6 +82,7 @@ const ServicesPage: React.FC = () => {
       quote: "Strong foundations. Smarter futures.",
       icon: <Building className="w-6 h-6" />,
       color: "bg-blue-500",
+      img: "infrastructure",
     },
     {
       phase: "COMMISSION",
@@ -90,6 +92,7 @@ const ServicesPage: React.FC = () => {
       quote: "We turn structures into life-saving ecosystems.",
       icon: <Settings className="w-6 h-6" />,
       color: "bg-purple-500",
+      img: "system",
     },
     {
       phase: "MANAGE",
@@ -99,6 +102,7 @@ const ServicesPage: React.FC = () => {
       quote: "Seamless operations. Sustainable outcomes.",
       icon: <Shield className="w-6 h-6" />,
       color: "bg-red-500",
+      img: "operational",
     },
   ];
 
@@ -110,6 +114,7 @@ const ServicesPage: React.FC = () => {
         text="Comprehensive healthcare solutions designed to transform Africa's
               healthcare landscape through innovation, expertise, and strategic
               partnerships."
+        img="service"
       />
 
       {/* Main Services */}
@@ -137,7 +142,7 @@ const ServicesPage: React.FC = () => {
               >
                 <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
                   <div
-                    className={`w-16 h-16 bg-${service.color}-100 rounded-lg flex items-center justify-center mb-6 text-${service.color}-600`}
+                    className={`w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-${service.color}-600`}
                   >
                     {service.icon}
                   </div>
@@ -228,12 +233,14 @@ const ServicesPage: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="lg:w-1/2">
-                      {/* <div
-                        className={`w-32 h-32 ${step.color} rounded-full flex items-center justify-center mx-auto text-gray-200`}
-                      >
-                        {step.icon}
-                      </div> */}
+                    <div
+                      className={`w-[38%] ${step.color} bg-gradient-to-br from-green-100 to-red-50 p-8 rounded-2xl flex items-center justify-center mx-auto text-gray-200`}
+                    >
+                      <img
+                        src={`/images/${step.img}.jpg`}
+                        alt={step.title}
+                        className="rounded-2xl"
+                      />
                     </div>
                   </div>
                 </SlideIn>

@@ -96,6 +96,7 @@ const AboutPage: React.FC = () => {
         heading="About Synergy Health Solutions"
         text="We're not just building hospitals. We're building healthier
               futures across Africa."
+        img="about"
       />
 
       {/* Who We Are */}

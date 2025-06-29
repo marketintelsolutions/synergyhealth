@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X, Plus } from "lucide-react";
+import { Menu, X, Plus, ArrowDown, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface NavbarProps {
@@ -7,14 +7,31 @@ interface NavbarProps {
 }
 
 const navigation = [
-  { name: "About", href: "/about", id: "about" },
-  { name: "Team", href: "/team", id: "team" },
+  { name: "Home", href: "/", id: "" },
+  {
+    name: "About",
+    href: "/about",
+    id: ["about", "team"],
+    items: [
+      {
+        name: "About",
+        href: "/about",
+        id: "about",
+      },
+      {
+        name: "Team",
+        href: "/team",
+        id: "team",
+      },
+    ],
+  },
   { name: "Services", href: "/services", id: "services" },
   { name: "Contact", href: "/contact", id: "contact" },
 ];
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdown, setIsDropDown] = useState(false);
 
   const { pathname } = window.location;
 
@@ -38,19 +55,58 @@ const Navbar: React.FC<NavbarProps> = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex  w-[65%] justify-between">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navigation.map((item) => (
-                <a
-                  key={item.id}
-                  href={item.href}
-                  className={`px-3 py-2 text-lg font-bold transition-colors ${
-                    currentPage === item.id
-                      ? "text-primaryRed border-b-2 border-primaryRed"
-                      : "text-gray-600 hover:text-primaryGreen"
-                  }`}
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navigation.map((item) => {
+                if (item.items) {
+                  return (
+                    <p
+                      onMouseEnter={() => setIsDropDown(true)}
+                      onMouseLeave={() => setIsDropDown(false)}
+                      className={`relative px-3 py-2 cursor-pointer text-lg font-bold transition-colors ${
+                        item.id.includes(currentPage)
+                          ? "text-primaryRed border-b-2 border-primaryRed"
+                          : "text-gray-600 hover:text-primaryGreen"
+                      }`}
+                    >
+                      <span className="flex items-center gap-1">
+                        About Us{" "}
+                        <span className={`${isDropdown && "rotate-180"}`}>
+                          <ChevronDown />
+                        </span>
+                      </span>
+                      {isDropdown && (
+                        <div className="absolute w-full left-0 top-full flex flex-col bg-white">
+                          {item.items.map((subitem, index) => (
+                            <a
+                              key={subitem.id}
+                              href={subitem.href}
+                              className={`px-3 py-2 text-lg hover:bg-primaryRed font-bold transition-colors ${
+                                currentPage === subitem.id
+                                  ? "text-primaryRed hover:text-white border-primaryRed"
+                                  : "text-gray-600 hover:text-white"
+                              }`}
+                            >
+                              {subitem.name}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </p>
+                  );
+                }
+                return (
+                  <a
+                    key={item.id}
+                    href={item.href}
+                    className={`px-3 py-2 text-lg font-bold transition-colors ${
+                      currentPage === item.id
+                        ? "text-primaryRed border-b-2 border-primaryRed"
+                        : "text-gray-600 hover:text-primaryGreen"
+                    }`}
+                  >
+                    {item.name}
+                  </a>
+                );
+              })}
             </div>
             <Link to={"/contact"}>
               <button className="bg-primaryRed text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-green-700 transition-colors">
@@ -79,9 +135,9 @@ const Navbar: React.FC<NavbarProps> = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navigation.map((item) => (
+            {navigation.map((item, index) => (
               <Link
-                key={item.id}
+                key={index}
                 to={item.href}
                 className={`block px-3 py-2 text-base font-medium ${
                   currentPage === item.id
