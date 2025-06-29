@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/synergyhealth/static/css/main.b7a2a205.css",
+    "main.js": "/synergyhealth/static/js/main.4b29e668.js",
+    "static/media/calibril.woff": "/synergyhealth/static/media/calibril.d25422e2100cc43374cc.woff",
+    "index.html": "/synergyhealth/index.html",
+    "main.b7a2a205.css.map": "/synergyhealth/static/css/main.b7a2a205.css.map",
+    "main.4b29e668.js.map": "/synergyhealth/static/js/main.4b29e668.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7a2a205.css",
+    "static/js/main.4b29e668.js"
+  ]
+}
