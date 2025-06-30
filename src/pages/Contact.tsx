@@ -91,6 +91,7 @@ const ContactPage: React.FC = () => {
         text=" Partner with Synergy Health Solutions to create the healthcare
               systems Africa needs and deserves. Tomorrow's healthcare starts
               with today's decisions."
+        img="contact"
       />
       {/* Contact Methods */}
       <section className="py-20 bg-white">

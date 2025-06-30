@@ -54,6 +54,7 @@ const Team = () => {
         heading="Synergy Health Solutions - The Team"
         text="We're not just building hospitals. We're building healthier
               futures across Africa."
+        img="teams"
       />
 
       <p className="mt-24 px-6 lg:px-0 text-xl md:text-2xl font-medium max-w-max mx-auto text-justify">
