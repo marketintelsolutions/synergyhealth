@@ -48,7 +48,7 @@ const team = [
   },
   {
     name: "Dayo Omogbehin",
-    img: "/images/man.webp",
+    img: "/images/dayo.jpg",
     desc: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero perferendis debitis impedit corrupti, sed minus dolores deleniti eum maiores doloremque accusantium asperiores sit voluptate saepe pariatur mollitia tempore non provident laudantium dicta aspernatur atque eaque.",
       "Ratione corrupti, saepe aspernatur vitae distinctio corporis nostrum maiores reprehenderit minima exercitationem, facilis dolorem!",
