@@ -52,7 +52,7 @@ const Banner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full opacity-45 bg-gradient-to-r from-[#454646] to-[#afb5ba]"></div>
+      <div className="absolute top-0 left-0 w-full h-full opacity-60 bg-gradient-to-r from-[#4b4d4d] to-[#afb5ba]"></div>
       <div className="relative pt-10 z-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <SlideIn direction="left" duration={800} delay={200}>
