@@ -214,7 +214,7 @@ const HomePage: React.FC = () => {
             className="w-full h-lvh object-cover"
           />
         </div>
-        <div className="bg-[#00000048] py-40 relative z-[2]">
+        <div className="bg-[#00000071] py-40 relative z-[2]">
           <div className="max-w-7xl   mx-auto px-4 sm:px-6 lg:px-8">
             <SlideIn direction="top" duration={700} delay={100}>
               <div className="text-center mb-16">
