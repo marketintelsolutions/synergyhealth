@@ -134,11 +134,11 @@ const HomePage: React.FC = () => {
           </SlideIn>
 
           <div className="flex flex-wrap md:flex-nowrap gap-10 items-center">
-            <div className="w-full md:w-[50%] h-full p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
+            <div className="md:w-[40%] h-[30%] p-8 bg-gradient-to-br from-green-100 to-red-50 rounded-[16px]">
               <img
                 src="/images/pbcmimg.jpg"
                 alt="pbcm img"
-                className="w-full object-cover rounded-[16px]"
+                className="object-cover rounded-[16px]"
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

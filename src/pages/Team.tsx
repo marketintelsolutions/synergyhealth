@@ -34,8 +34,24 @@ const team = [
     name: "Nentok Gomwalk",
     img: "/images/nentok.jpg",
     desc: [
-      "Eric holds a master’s degree in marketing and a bachelor’s degree in business administration from the University of Lagos. He is a member of the Nigerian Institute of Management. Prior to joining PanAfrican Capital Holdings, he was actively involved in various high-profile projects, capital raising exercise and advisory mandates in the private sector as well as privatization programme of both the State and Federal governments at Profound Securities Limited, Fountain Trust Bank Plc and Refuge Home Savings and Loans Limited.",
-      "He has industry experience close to 20 years in Investment Banking & Structured Finance. He has been involved in raising capital in excess of N200 billion in the Nigerian markets and excess of $1 billion dollars from foreign institutions for project execution. He has attended various international and local courses on company Valuation and Issues Pricing, Managing and Packaging Issues, Mergers & Acquisitions, Bonds & Derivatives, Asset Backed Securities & Structured Finance.",
+      "Nentok Gomwalk is a seasoned finance professional with over 15 years of experience, currently serving as Group Head of Finance, Investment, and Strategy at Pan-African Capital Holdings. He has held prominent roles including Group CFO at Comercio Partners and Head of Finance & Treasury at GTI Investment Group. Nentok has a robust background in financial strategy, administration, and treasury management, with a career spanning firms like Eurocomm Securities and Lister Oil.",
+      "He holds a BBA from Ahmadu Bello University and is a certified ACCA member, reflecting his strong expertise in accounting and finance.",
+    ],
+  },
+  {
+    name: "Patience Ugbaja",
+    img: "/images/man.webp",
+    desc: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero perferendis debitis impedit corrupti, sed minus dolores deleniti eum maiores doloremque accusantium asperiores sit voluptate saepe pariatur mollitia tempore non provident laudantium dicta aspernatur atque eaque.",
+      "Ratione corrupti, saepe aspernatur vitae distinctio corporis nostrum maiores reprehenderit minima exercitationem, facilis dolorem!",
+    ],
+  },
+  {
+    name: "Dayo Omogbehin",
+    img: "/images/dayo.jpg",
+    desc: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero perferendis debitis impedit corrupti, sed minus dolores deleniti eum maiores doloremque accusantium asperiores sit voluptate saepe pariatur mollitia tempore non provident laudantium dicta aspernatur atque eaque.",
+      "Ratione corrupti, saepe aspernatur vitae distinctio corporis nostrum maiores reprehenderit minima exercitationem, facilis dolorem!",
     ],
   },
 ];
