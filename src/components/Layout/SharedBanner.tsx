@@ -8,18 +8,21 @@ const SharedBanner: React.FC<{
 }> = ({ img = "pagebanner", heading, text }) => {
   return (
     <section
-      className="h-[550px]  text-primaryGreen"
+      className="h-[550px] relative "
       style={{
         backgroundImage: `url(/images/${img}.jpg)`,
         backgroundSize: "cover",
       }}
     >
-      <div className="h-full pt-44 pb-32 bg-primaryGreen/20 ">
+      <div className="absolute h-full w-full top-0 left-0  bg-black/20 "></div>
+      <div className="h-full pt-[240px] relative z-[2] pb-32 bg-primaryGreen/20 ">
         <SlideIn direction="top" duration={800} delay={200}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6">{heading}</h1>
-              <p className="text-2xl text-black max-w-3xl mx-auto">{text}</p>
+              <h1 className="text-4xl text-white lg:text-6xl font-bold mb-6">
+                {heading}
+              </h1>
+              <p className="text-2xl text-gray-200 max-w-3xl mx-auto">{text}</p>
             </div>
           </div>
         </SlideIn>

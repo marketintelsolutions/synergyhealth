@@ -157,9 +157,11 @@ const ServicesPage: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="text-green-600 font-medium hover:text-green-700 flex items-center">
-                    Learn More <ArrowRight className="w-4 h-4 ml-2" />
-                  </button>
+                  <Link to={"/contact"}>
+                    <button className="text-green-600 font-medium hover:text-green-700 flex items-center">
+                      Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                    </button>
+                  </Link>
                 </div>
               </SlideIn>
             ))}
