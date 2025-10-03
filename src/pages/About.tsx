@@ -25,6 +25,7 @@ const AboutPage: React.FC = () => {
       color: "bg-green-500",
       delay: 200,
       hover: "hover:bg-green-100",
+      textColor: "text-primaryRed",
     },
     {
       letter: "A",
@@ -35,6 +36,7 @@ const AboutPage: React.FC = () => {
       color: "bg-red-500",
       delay: 400,
       hover: "hover:bg-red-100",
+      textColor: "text-primaryGreen",
     },
     {
       letter: "R",
@@ -44,6 +46,7 @@ const AboutPage: React.FC = () => {
       color: "bg-red-500",
       delay: 400,
       hover: "hover:bg-red-100",
+      textColor: "text-primaryGreen",
     },
     {
       letter: "E",
@@ -55,6 +58,7 @@ const AboutPage: React.FC = () => {
       color: "bg-green-500",
       delay: 200,
       hover: "hover:bg-green-100",
+      textColor: "text-primaryRed",
     },
   ];
 
@@ -284,7 +288,7 @@ const AboutPage: React.FC = () => {
                         className="w-[50px] font-bold text-white"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-primaryGreen mb-3">
+                    <h3 className={`text-xl font-bold mb-3 ${item.textColor}`}>
                       {item.title}
                     </h3>
                     <p className="text-gray-600 h-12 text-sm">{item.desc}</p>

@@ -150,6 +150,7 @@ const HomePage: React.FC = () => {
                   color: "bg-green-500",
                   delay: 200,
                   hover: "hover:bg-green-100",
+                  textColor: "text-primaryGreen",
                 },
                 {
                   letter: "b",
@@ -158,6 +159,7 @@ const HomePage: React.FC = () => {
                   color: "bg-red-500",
                   delay: 400,
                   hover: "hover:bg-red-100",
+                  textColor: "text-primaryRed",
                 },
                 {
                   letter: "c",
@@ -166,6 +168,7 @@ const HomePage: React.FC = () => {
                   color: "bg-red-500",
                   delay: 600,
                   hover: "hover:bg-red-100",
+                  textColor: "text-primaryRed",
                 },
                 {
                   letter: "m",
@@ -174,6 +177,7 @@ const HomePage: React.FC = () => {
                   color: "bg-green-500",
                   delay: 800,
                   hover: "hover:bg-green-100",
+                  textColor: "text-primaryGreen",
                 },
               ].map((item, index) => (
                 <SlideIn
@@ -193,7 +197,7 @@ const HomePage: React.FC = () => {
                         className="w-[50px] font-bold text-white"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-primaryGreen mb-3">
+                    <h3 className={`text-xl font-bold  mb-3 ${item.textColor}`}>
                       {item.title}
                     </h3>
                     <p className="text-gray-600 h-12 text-sm">{item.desc}</p>
@@ -348,13 +352,17 @@ const HomePage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={"/contact"}>
-                <button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                <button className="bg-black border-2 border-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
                   Schedule Consultation
                 </button>
               </Link>
-              <button className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black/10 transition-colors">
+              <a
+                target="_blank"
+                href="/brochure.pdf"
+                className="border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-colors"
+              >
                 Download Brochure
-              </button>
+              </a>
             </div>
           </div>
         </SlideIn>

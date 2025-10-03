@@ -10,14 +10,8 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex gap-2 items-center mb-4">
-              <div className="w-8 h-8 ">
-                <img src="/images/logoicon.svg" alt="" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Synergy Health Solutions</h3>
-                <p className="text-sm text-green-200">
-                  ...elevating healthcare, one system at a time
-                </p>
+              <div className="max-w-[150px]">
+                <img src="/images/logo.svg" alt="logo" />
               </div>
             </div>
             <p className="text-gray-100 mb-6 max-w-md">

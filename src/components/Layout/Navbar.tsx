@@ -26,6 +26,7 @@ const navigation = [
     ],
   },
   { name: "Services", href: "/services", id: "services" },
+  { name: "Projects", href: "/projects", id: "projects" },
   { name: "Contact", href: "/contact", id: "contact" },
 ];
 
