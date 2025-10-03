@@ -6,6 +6,7 @@ import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import Team from "./pages/Team";
+import Project from "./pages/Project";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +39,14 @@ function App() {
       element: (
         <MainLayout>
           <ServicesPage />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/projects",
+      element: (
+        <MainLayout>
+          <Project />
         </MainLayout>
       ),
     },

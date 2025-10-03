@@ -157,11 +157,11 @@ const ServicesPage: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={"/contact"}>
+                  {/* <Link to={"/contact"}>
                     <button className="text-green-600 font-medium hover:text-green-700 flex items-center">
                       Learn More <ArrowRight className="w-4 h-4 ml-2" />
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </SlideIn>
             ))}
@@ -221,7 +221,9 @@ const ServicesPage: React.FC = () => {
                             <h3 className="text-2xl font-bold text-primaryGreen">
                               {step.title}
                             </h3>
-                            <p className={`text-gray-600 font-medium`}>
+                            <p
+                              className={`text-gray-600 text-lg tracking-[2px] font-bold`}
+                            >
                               {step.phase}
                             </p>
                           </div>

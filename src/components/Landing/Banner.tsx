@@ -52,7 +52,7 @@ const Banner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full opacity-60 bg-gradient-to-r from-[#4b4d4d] to-[#afb5ba]"></div>
+      <div className="absolute top-0 left-0 w-full h-full opacity-60 bg-gradient-to-r from-[#181919] to-[#525456]"></div>
       <div className="relative pt-10 z-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <SlideIn direction="left" duration={800} delay={200}>
@@ -64,7 +64,7 @@ const Banner = () => {
                 Transforming Healthcare
                 <span className="text-white"> Across Africa</span>
               </h1>
-              <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+              <p className="text-lg text-white mb-8 leading-relaxed">
                 Synergy Health Solutions delivers future-ready, patient-centric
                 hospital solutions—designed, built, and managed for impact. We
                 partner with governments and private stakeholders to create the

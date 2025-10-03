@@ -19,10 +19,12 @@ const SharedBanner: React.FC<{
         <SlideIn direction="top" duration={800} delay={200}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl text-white lg:text-6xl font-bold mb-6">
+              <h1 className="text-4xl bg-black/40 rounded-[15px] py-5 px-3 text-white lg:text-6xl font-bold mb-6">
                 {heading}
               </h1>
-              <p className="text-2xl text-gray-200 max-w-3xl mx-auto">{text}</p>
+              <p className="text-2xl text-white rounded-[12px] bg-black/30 py-4 px-3 max-w-3xl mx-auto">
+                {text}
+              </p>
             </div>
           </div>
         </SlideIn>
