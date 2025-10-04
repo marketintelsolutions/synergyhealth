@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
       color: "bg-green-500",
       delay: 200,
       hover: "hover:bg-green-100",
-      textColor: "text-primaryRed",
+      textColor: "text-primaryGreen",
     },
     {
       letter: "A",
@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
       color: "bg-red-500",
       delay: 400,
       hover: "hover:bg-red-100",
-      textColor: "text-primaryGreen",
+      textColor: "text-primaryRed",
     },
     {
       letter: "R",
@@ -46,7 +46,7 @@ const AboutPage: React.FC = () => {
       color: "bg-red-500",
       delay: 400,
       hover: "hover:bg-red-100",
-      textColor: "text-primaryGreen",
+      textColor: "text-primaryRed",
     },
     {
       letter: "E",
@@ -58,7 +58,7 @@ const AboutPage: React.FC = () => {
       color: "bg-green-500",
       delay: 200,
       hover: "hover:bg-green-100",
-      textColor: "text-primaryRed",
+      textColor: "text-primaryGreen",
     },
   ];
 
@@ -338,7 +338,7 @@ const AboutPage: React.FC = () => {
 
                 <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl">
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-primaryRed rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-primaryGreen rounded-full flex items-center justify-center mx-auto mb-6">
                       <Handshake className="w-10 h-10 text-white" />
                     </div>
                     <h4 className="text-xl font-bold text-primaryGreen mb-4">

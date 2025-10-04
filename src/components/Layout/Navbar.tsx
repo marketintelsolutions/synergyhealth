@@ -26,7 +26,7 @@ const navigation = [
     ],
   },
   { name: "Services", href: "/services", id: "services" },
-  { name: "Projects", href: "/projects", id: "projects" },
+
   { name: "Contact", href: "/contact", id: "contact" },
 ];
 
@@ -109,9 +109,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                 );
               })}
             </div>
-            <Link to={"/contact"}>
+            <Link to={"/projects"}>
               <button className="bg-primaryRed text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-green-700 transition-colors">
-                Get Started
+                Projects
               </button>
             </Link>
           </div>
