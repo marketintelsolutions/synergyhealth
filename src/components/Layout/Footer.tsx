@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 uppercase">
+            <h4 className="text-lg font-bold mb-4 uppercase">
               Our Services
             </h4>
             <ul className="space-y-2 text-gray-200">

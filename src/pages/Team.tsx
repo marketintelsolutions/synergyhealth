@@ -40,10 +40,11 @@ const team = [
   },
   {
     name: "Patience Ugbaja",
-    img: "/images/man.webp",
+    img: "/images/patience.jpg",
     desc: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero perferendis debitis impedit corrupti, sed minus dolores deleniti eum maiores doloremque accusantium asperiores sit voluptate saepe pariatur mollitia tempore non provident laudantium dicta aspernatur atque eaque.",
-      "Ratione corrupti, saepe aspernatur vitae distinctio corporis nostrum maiores reprehenderit minima exercitationem, facilis dolorem!",
+      "Patience is the pioneer MD/CEO of Afrilife Healthcare Services the health subsidiary of PAC Holdings Ltd with its investment activities spanning across the healthcare value chain. She has over a decade of experience in strategic business development of medical diagnostics services and project management of medical diagnostics outfits including some years in pharma products sales.",
+      "She started her diagnostics career from Mecure Healthcare Services in 2009 as a pioneer marketing staff to drive the marketing/sales of private medical diagnostics services and pharmaceutical OTC drugs to both private and public medical institutions across Lagos state and other key cities: Umuahia, Uyo, Calabar etc Subsequently, She has led different business development teams and initiatives across different start-ups in different capacities such as Marketing Manager, Strategy & Business Development Mgr., Project Coordinator and Chief Operating Officer, aiding them gain considerable market share in the diagnostics industry.",
+      "She holds a Bachelor of Engineering degree from the University of Port Harcourt and an MBA from the University of Lagos. She has also attended different trainings in Customer Experience, Sales & Performance Evaluation (ER Consulting), and Project Management (ALISON, Ireland).",
     ],
   },
   {

@@ -43,8 +43,7 @@ const Project = () => {
       <section className="max-w-7xl flex justify-between mx-auto py-20 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-[60%]">
           <h1 className="uppercase text-4xl font-bold ">
-            Concession: Ogun hands over specialist hospital to Afrilife’s
-            VIEWPOINT
+            Concession: Ogun hands over specialist hospital to Afrilife’s...
           </h1>
           <p className="text-gray-400 text-lg mt-4">November 16, 2024</p>
 
@@ -118,12 +117,12 @@ const Project = () => {
               Accusantium fugiat error dolore, sit sint consectetur
               reprehenderit?
             </p>
-            <p className="text-lg font-light">
+            {/* <p className="text-lg font-light">
               For more images and videos of the event please see the links
               below:
-            </p>
+            </p> */}
           </div>
-          <div className="flex gap-4 mt-5">
+          {/* <div className="flex gap-4 mt-5">
             <a
               className="underline text-blue-600"
               target="_blank"
@@ -145,7 +144,7 @@ const Project = () => {
             >
               More News
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="w-full max-w-[380px]">
           <h2 className="text-3xl font-bold">Latest Projects</h2>
