@@ -22,7 +22,7 @@ const SharedBanner: React.FC<{
               <h1 className="text-4xl bg-black/40 rounded-[15px] py-5 px-3 text-white lg:text-6xl font-bold mb-6">
                 {heading}
               </h1>
-              <p className="text-2xl text-white rounded-[12px] bg-black/30 py-4 px-3 max-w-3xl mx-auto">
+              <p className="text-2xl font-bold text-white rounded-[12px] bg-black/30 py-4 px-3 max-w-3xl mx-auto">
                 {text}
               </p>
             </div>

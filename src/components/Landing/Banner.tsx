@@ -64,7 +64,7 @@ const Banner = () => {
                 Transforming Healthcare
                 <span className="text-white"> Across Africa</span>
               </h1>
-              <p className="text-lg text-white mb-8 leading-relaxed">
+              <p className="text-lg font-bold text-white mb-8 leading-relaxed">
                 Synergy Health Solutions delivers future-ready, patient-centric
                 hospital solutions—designed, built, and managed for impact. We
                 partner with governments and private stakeholders to create the

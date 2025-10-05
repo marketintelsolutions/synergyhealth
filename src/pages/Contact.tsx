@@ -118,7 +118,7 @@ const ContactPage: React.FC = () => {
               >
                 <div className="text-center p-8 bg-gray-50 h-[280px] rounded-xl hover:shadow-lg transition-shadow">
                   <div
-                    className={`w-16 h-16 ${method.color} rounded-full flex items-center justify-center mx-auto mb-6 `}
+                    className={`w-16 h-16 bg-green-100 text-primaryGreen rounded-full flex items-center justify-center mx-auto mb-6 `}
                   >
                     {method.icon}
                   </div>

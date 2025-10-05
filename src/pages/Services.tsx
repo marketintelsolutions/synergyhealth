@@ -142,7 +142,7 @@ const ServicesPage: React.FC = () => {
               >
                 <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
                   <div
-                    className={`w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-${service.color}-600`}
+                    className={`w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primaryGreen`}
                   >
                     {service.icon}
                   </div>
