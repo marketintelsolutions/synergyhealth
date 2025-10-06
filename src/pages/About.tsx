@@ -284,7 +284,7 @@ const AboutPage: React.FC = () => {
                       className={`p-2 w-fit ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
                     >
                       <img
-                        src={`/images/${item.letter}.png`}
+                        src={`/images/${item.letter.toLocaleLowerCase()}.png`}
                         className="w-[50px] font-bold text-white"
                       />
                     </div>

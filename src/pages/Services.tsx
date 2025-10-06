@@ -212,7 +212,7 @@ const ServicesPage: React.FC = () => {
                             className={`w-fit p-4 ${step.color} rounded-full flex items-center justify-center mr-4`}
                           >
                             <img
-                              src={`/images/${step.phase[0]}.png`}
+                              src={`/images/${step.phase[0].toLocaleLowerCase()}.png`}
                               alt={step.phase}
                               className="w-[50px]"
                             />
@@ -238,7 +238,7 @@ const ServicesPage: React.FC = () => {
                     </div>
 
                     <div
-                      className={`w-[38%] ${step.color} bg-gradient-to-br from-green-100 to-red-50 p-8 rounded-2xl flex items-center justify-center mx-auto text-gray-200`}
+                      className={`w-full lg:w-[38%] ${step.color} bg-gradient-to-br from-green-100 to-red-50 p-8 rounded-2xl flex items-center justify-center mx-auto text-gray-200`}
                     >
                       <img
                         src={`/images/${step.img}.jpg`}
