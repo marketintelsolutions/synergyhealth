@@ -51,8 +51,10 @@ const team = [
     name: "Dayo Omogbehin",
     img: "/images/dayo.jpg",
     desc: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero perferendis debitis impedit corrupti, sed minus dolores deleniti eum maiores doloremque accusantium asperiores sit voluptate saepe pariatur mollitia tempore non provident laudantium dicta aspernatur atque eaque.",
-      "Ratione corrupti, saepe aspernatur vitae distinctio corporis nostrum maiores reprehenderit minima exercitationem, facilis dolorem!",
+      "Dr. Dayo Omogbehin is a seasoned management consultant and healthcare executive with over 26 years of cross-industry experience spanning healthcare, banking, insurance, information technology, marketing, and advertising. His professional journey reflects a strong track record in strategic operations, project management, marketing, customer acquisition and retention, and business transformation.",
+      "An alumnus of the College of Medicine, University of Lagos, Dr. Omogbehin further enhanced his expertise in marketing and business strategy through executive programs at Simon Page College of Marketing and Lagos Business School. He is also a distinguished Fellow of the Institute of Management Consultants.",
+      "Prior to his current role, Dr. Omogbehin served as the Chief Executive Officer of Iwosan Lagoon Hospitals, Ikeja. During his six-year tenure, he led a remarkable turnaround, driving organizational growth, operational efficiency, and enhanced service delivery.",
+      "With a unique blend of medical knowledge and business acumen, Dr. Omogbehin brings invaluable insight to healthcare management and strategic leadership.",
     ],
   },
 ];

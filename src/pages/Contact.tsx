@@ -77,6 +77,7 @@ const ContactPage: React.FC = () => {
       details: [
         "www.synergyhealthsolutions.org",
         "LinkedIn: Synergy Health Solutions",
+        "Instagram: synergyhealthsolutionslimited",
       ],
       color: "bg-green-100",
     },
