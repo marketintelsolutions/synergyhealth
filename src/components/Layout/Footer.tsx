@@ -1,5 +1,13 @@
 import React from "react";
-import { Plus, Mail, MapPin, Globe } from "lucide-react";
+import {
+  Plus,
+  Mail,
+  MapPin,
+  Globe,
+  Instagram,
+  Linkedin,
+  LinkedinIcon,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -39,13 +47,24 @@ const Footer: React.FC = () => {
                 <p className="text-gray-100">www.synergyhealthsolutions.org</p>
               </div>
             </div>
+
+            <div className="mt-5 flex gap-5">
+              <a target="_blank" href="https://instagram.com">
+                <span>
+                  <Instagram />
+                </span>
+              </a>
+              <a target="_blank" href="https://linkedin.com">
+                <span>
+                  <LinkedinIcon />
+                </span>
+              </a>
+            </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold mb-4 uppercase">
-              Our Services
-            </h4>
+            <h4 className="text-lg font-bold mb-4 uppercase">Our Services</h4>
             <ul className="space-y-2 text-gray-200">
               <li>
                 <Link

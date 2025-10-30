@@ -20,12 +20,12 @@ const TeamMemberModal = ({ modal, name, img, desc }) => {
             >
                 <span onClick={modal.close} className="absolute cursor-pointer top-5 right-5"><IoClose size={25} /></span>
                 <div className="w-full lg:max-w-[40%]"><img src={img} alt="person" className="h-full w-full object-cover" /></div>
-                <div className="w-full lg:max-w-[50%] px-6 lg:px-0 lg:py-20">
+                <div className="w-full overflow-y-scroll lg:max-w-[50%] px-6 lg:px-0 lg:py-20">
                     <h2 className="text-[30px]">{name}</h2>
                     {/* <p className="text-primaryBlue mt-4 font-light">Executive Property Manager</p> */}
 
                     <h3 className="font-bold underline mt-8 mb-6">About:</h3>
-                    <div className="flex flex-col gap-5 max-h-[500px] overflow-y-scroll">
+                    <div className="flex flex-col gap-5 max-h-[500px]">
                         {
                             desc.map((item) => (
 
