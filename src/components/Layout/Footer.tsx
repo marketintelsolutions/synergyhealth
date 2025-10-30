@@ -49,12 +49,12 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="mt-5 flex gap-5">
-              <a target="_blank" href="https://instagram.com">
+              <a target="_blank" href="https://www.instagram.com/synergyhealthsolutionslimited/">
                 <span>
                   <Instagram />
                 </span>
               </a>
-              <a target="_blank" href="https://linkedin.com">
+              <a target="_blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A107967457&keywords=synergy%20health%20solutions%20limited&origin=RICH_QUERY_SUGGESTION&position=4&searchId=f7fd7b05-96bc-40f1-9d03-8df180162a9b&sid=biZ&spellCorrectionEnabled=false">
                 <span>
                   <LinkedinIcon />
                 </span>
