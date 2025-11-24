@@ -56,66 +56,46 @@ const Project = () => {
 
           <div className="flex flex-col gap-3 mt-5 text-justify">
             <p className="text-lg font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio deserunt expedita eius ipsam, at culpa aspernatur
-              corrupti? Ea voluptate itaque impedit iusto cum placeat provident.
-              Saepe tempora expedita, nisi nam laudantium recusandae assumenda
-              aliquam animi omnis, odio obcaecati alias cumque.
+              The Ogun State government has handed over its specialist 
+              hospital to Afrilife’s portfolio company, VIEWPOINT, following 
+              the signing of a 25-year concession agreement between both parties.
             </p>
             <p className="text-lg font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque,
-              necessitatibus nihil animi nam ipsum itaque vitae! Nihil, natus
-              aspernatur!
+              The handover ceremony, which took place on Thursday marked a significant 
+              milestone in advancing healthcare infrastructure in Ogun State.
             </p>
             <p className="text-lg font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam cumque officia nostrum exercitationem veniam, quisquam
-              perspiciatis quae vel quaerat quidem veritatis in sed provident
-              quo obcaecati doloribus similique excepturi culpa?
+              The partnership is expected to transform the Ogun State Specialist Hospital 
+              into a leading institution, providing world-class medical care and services 
+              to communities across the state.
             </p>
             <p className="text-lg font-light">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              totam eaque sapiente, praesentium sequi deleniti architecto
-              adipisci. Porro exercitationem quas architecto itaque, recusandae
-              ex et fugit sapiente quos aspernatur voluptatibus? Illum non
-              maiores illo obcaecati nihil commodi perspiciatis aliquid quos
-              dignissimos? Temporibus asperiores dicta quam!
+              Patience Ugbaja, managing director, Afrilife Healthcare services, emphasised 
+              the company’s dedication to creating a facility that sets a standard for 
+              quality and accessible healthcare.
             </p>
             <p className="text-lg font-light">
-              “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              dolores eligendi maiores libero at dolorem sed quisquam cumque
-              fuga. Labore odio, qui perferendis, amet ipsa tenetur eligendi ex
-              delectus quos dolorem at.”
+              “This handover signifies not only a significant moment for AFRILIFE & VIEWPOINT 
+              but also for a fulfilled promise of the best healthcare delivery in Ogun State. 
+              Today represents an exciting new chapter in healthcare delivery for Ogun State.”
             </p>
             <div className="my-5">
               <img src="/images/ogun/ogun2.jpg" alt="" />
             </div>
             <p className="text-lg font-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              eum similique quibusdam, asperiores culpa quidem. Hic cum libero
-              itaque neque eaque id sed at, ratione consectetur debitis
-              voluptatem, quisquam odio quibusdam. Eos explicabo impedit, quam
-              minus accusamus in officia corrupti excepturi dolorum, voluptates
-              dicta debitis?
+              Also speaking, Eric Okoruwa, executive director, Pan African Capital Holdings, 
+              noted the significance of the project, stating that it aligns with PAC Holdings’ 
+              vision to invest in impactful initiatives that improve the quality of life across Africa.
             </p>
             <p className="text-lg font-light">
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Officiis possimus ut consectetur eos, ducimus, non totam
-              laboriosam id dolore iusto in dolorem reiciendis odio accusamus
-              voluptatem soluta sequi excepturi porro voluptatum explicabo.
-              Ratione, nobis? Id ratione vero eos, temporibus dolor ullam
-              voluptates itaque quibusdam fuga asperiores est, excepturi
-              adipisci repudiandae molestiae pariatur, facilis tempore deserunt
-              corrupti neque atque. Officia neque tenetur suscipit hic dolore
-              dolorum temporibus eligendi autem dolorem ipsum.”
+              “This partnership is a testament to Afrilife’s commitment to sustainable development 
+              and social impact. By harnessing our healthcare expertise and collaborating with reputable 
+              partners, through Viewpoint we are well-equipped to transform the Ogun State Specialist 
+              Hospital into a leading institution. This project aligns with PAC Holdings’ vision to invest 
+              in impactful initiatives that improve the quality of life across Africa.”
             </p>
             <p className="text-lg font-light">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-              dolorum sint id eaque quia minus fugiat repudiandae dolor
-              provident eligendi, exercitationem voluptate laboriosam ipsum
-              quas, temporibus, maxime similique autem repellendus quam iste!
-              Accusantium fugiat error dolore, sit sint consectetur
-              reprehenderit?
+              The event was attended by representatives from JEE Africa and Healthshare Health Solutions, who are key partners in the project, as well as other stakeholders in the healthcare and development sectors.
             </p>
             {/* <p className="text-lg font-light">
               For more images and videos of the event please see the links
@@ -159,8 +139,7 @@ const Project = () => {
               </p>
               <p>
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                cum totam minima. Laboriosam, eveniet omnis
+                Concession: Ogun hands over specialist hospital to Afrilife’s
               </p>
             </div>
           </div>
