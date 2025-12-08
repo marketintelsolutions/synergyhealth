@@ -47,16 +47,16 @@ const team = [
       "She holds a Bachelor of Engineering degree from the University of Port Harcourt and an MBA from the University of Lagos. She has also attended different trainings in Customer Experience, Sales & Performance Evaluation (ER Consulting), and Project Management (ALISON, Ireland).",
     ],
   },
-  {
-    name: "Dayo Omogbehin",
-    img: "/images/dayo.jpg",
-    desc: [
-      "Dr. Dayo Omogbehin is a seasoned management consultant and healthcare executive with over 26 years of cross-industry experience spanning healthcare, banking, insurance, information technology, marketing, and advertising. His professional journey reflects a strong track record in strategic operations, project management, marketing, customer acquisition and retention, and business transformation.",
-      "An alumnus of the College of Medicine, University of Lagos, Dr. Omogbehin further enhanced his expertise in marketing and business strategy through executive programs at Simon Page College of Marketing and Lagos Business School. He is also a distinguished Fellow of the Institute of Management Consultants.",
-      "Prior to his current role, Dr. Omogbehin served as the Chief Executive Officer of Iwosan Lagoon Hospitals, Ikeja. During his six-year tenure, he led a remarkable turnaround, driving organizational growth, operational efficiency, and enhanced service delivery.",
-      "With a unique blend of medical knowledge and business acumen, Dr. Omogbehin brings invaluable insight to healthcare management and strategic leadership.",
-    ],
-  },
+  // {
+  //   name: "Dayo Omogbehin",
+  //   img: "/images/dayo.jpg",
+  //   desc: [
+  //     "Dr. Dayo Omogbehin is a seasoned management consultant and healthcare executive with over 26 years of cross-industry experience spanning healthcare, banking, insurance, information technology, marketing, and advertising. His professional journey reflects a strong track record in strategic operations, project management, marketing, customer acquisition and retention, and business transformation.",
+  //     "An alumnus of the College of Medicine, University of Lagos, Dr. Omogbehin further enhanced his expertise in marketing and business strategy through executive programs at Simon Page College of Marketing and Lagos Business School. He is also a distinguished Fellow of the Institute of Management Consultants.",
+  //     "Prior to his current role, Dr. Omogbehin served as the Chief Executive Officer of Iwosan Lagoon Hospitals, Ikeja. During his six-year tenure, he led a remarkable turnaround, driving organizational growth, operational efficiency, and enhanced service delivery.",
+  //     "With a unique blend of medical knowledge and business acumen, Dr. Omogbehin brings invaluable insight to healthcare management and strategic leadership.",
+  //   ],
+  // },
 ];
 
 const Team = () => {
